@@ -18,15 +18,16 @@
 }
 
 main {
-  background-color: black;
+  background-color: transparent;
 }
 
 footer {
-  background-color: black;
+  background-color: transparent; 
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 5vh;
+  padding-bottom: 2vh;
 }
 
 /* inicio */
@@ -225,7 +226,7 @@ ul {
   border-radius: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  
   text-align: center;
   flex-direction: column;
   transition:
@@ -248,4 +249,16 @@ ul {
 
 .btn_project{
     margin-bottom: 2vh;
+}
+
+/* fondo */
+
+#star-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  background-color: #000000; 
 }
