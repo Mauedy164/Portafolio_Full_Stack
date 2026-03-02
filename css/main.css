@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+#navbar_container_index {
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+}
+
+.navbar {
+  height: 10vh;
+}
+.nav-icon {
+  height: 10vh;
+}
+
+main {
+  background-color: transparent;
+}
+
+footer {
+  background-color: transparent; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+}
+
+/* inicio */
+
+#inicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 20px;
+  padding-top: 10vh;
+}
+
+@media (min-width: 768px) {
+  #inicio {
+    flex-direction: row;
+  }
+
+  #redes_container {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .redes_img_container {
+    width: 80px;
+    height: 80px;
+    flex: none;
+  }
+}
+
+#redes_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.redes_img_container {
+  flex: 0 0 45%;
+
+  max-width: 80px;
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(128, 128, 128, 0.23);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.redes_img_container:hover {
+  transform: scale(1.05);
+}
+
+.img_redes {
+  height: 40px;
+}
+
+.img-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#photo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.img-profile {
+  max-height: 50vh;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  transition: transform 0.5s ease;
+}
+
+.link:hover {
+  transform: scale(1.1);
+}
+
+/* Skills */
+
+#skills {
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+}
+
+.skills_title {
+  display: flex;
+  justify-content: center;
+}
+
+.container_hard_skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.card_skills {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(169, 169, 169, 0.1);
+  border-radius: 10px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.card_skills:hover {
+  transform: scale(1.03);
+  border-color: #0cecec;
+  box-shadow:
+    0 0 10px rgba(12, 236, 236, 0.6),
+    0 0 20px rgba(12, 236, 236, 0.3),
+    0 0 30px rgba(12, 236, 236, 0.1);
+}
+
+.title_skill {
+  text-align: center;
+}
+
+.container_soft_skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.soft_skill_card {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(169, 169, 169, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.soft_skill_card:hover {
+  transform: scale(1.03);
+  border-color: #0cecec;
+  box-shadow:
+    0 0 10px rgba(12, 236, 236, 0.6),
+    0 0 20px rgba(12, 236, 236, 0.3),
+    0 0 30px rgba(12, 236, 236, 0.1);
+}
+
+.img_skills {
+  height: 5vh;
+  margin: 1vh;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Proyectos */
+
+#projects {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10vh;
+}
+
+.projects_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+.project_card {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(169, 169, 169, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  
+  text-align: center;
+  flex-direction: column;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+.project_card:hover {
+  transform: scale(1.03);
+}
+
+.project_img {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.tecnology_img {
+  height: 5vh;
+  margin: 1vh;
+}
+
+.btn_project{
+    margin-bottom: 2vh;
+}
+
+/* fondo */
+
+#star-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  background-color: #000000; 
+}
