@@ -251,6 +251,14 @@ ul {
     margin-bottom: 2vh;
 }
 
+/* Cursos */
+#courses_certifications{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10vh;
+}
+
 /* fondo */
 
 #star-canvas {

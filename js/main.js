@@ -20,8 +20,7 @@ if(navbar_container_index){
                                 <a class="nav-link" aria-current="page" href="#inicio">Inicio</a>
                                 <a class="nav-link" href="#skills">Habilidades</a>
                                 <a class="nav-link" href="#projects">Proyectos</a>
-                                <a class="nav-link" href="#">Cursos</a>
-                                <a class="nav-link" href="#">Contacto</a>
+                                <a class="nav-link" href="#courses_certifications">Certificaciones y Cursos</a>
                             </div>
                         </div>
                     </div>
